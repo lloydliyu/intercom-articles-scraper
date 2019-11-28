@@ -77,7 +77,7 @@ module Articles
       record = Article.new(article)
       if record.valid?
         record.save
-        Rails.logger.info "Article with id " + record.id + " created." unless quiet
+        Rails.logger.info "Article with id " + record.id.to_s + " created." unless quiet
       else
         record_error(article['page_slug'].to_s)
       end
