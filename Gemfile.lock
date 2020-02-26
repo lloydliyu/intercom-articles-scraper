@@ -75,7 +75,7 @@ GEM
     mutations (0.9.0)
       activesupport
     nio4r (2.4.0)
-    nokogiri (1.10.5)
+    nokogiri (1.10.8)
       mini_portile2 (~> 2.4.0)
     puma (3.12.1)
     rack (2.0.7)
