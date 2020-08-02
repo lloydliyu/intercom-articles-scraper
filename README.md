@@ -1,3 +1,5 @@
+**Since Intercom now has an official Articles API, which can export and import articles, this project is no longer needed or maintained. The official API is best used.**
+
 # Intercom-article-scraper
 
 A simple project for Intercom to scrape articles from a public help center and allow access through a simple API.
