@@ -20,6 +20,10 @@ module Articles
     def collect_all_articles
       for page in @pages
         Rails.logger.info "Found page: " + page.to_s unless quiet
+        if page.to_s.include? "mailto"
+          Rails.logger.warn "Ignoring 'mailto' anchor"
+          next
+        end
         @pages + collect_all_articles_from_page(page)
       end
     end
